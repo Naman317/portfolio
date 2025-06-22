@@ -1,23 +1,47 @@
-// components/NavBar.js
-import Link from "next/link";
+'use client';
+import { useEffect, useState } from 'react';
 
-const NavBar = () => {
-  const navItems = ["Home", "About", "Projects", "Contact"];
+const Navbar = () => {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setShow(false); // Hide on scroll down
+      } else {
+        setShow(true); // Show on scroll up
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', controlNavbar);
+    return () => window.removeEventListener('scroll', controlNavbar);
+  }, [lastScrollY]);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#050014]">
-      <div className="bg-[#0b0c2a] px-8 py-3 rounded-2xl border border-[#1d1d35] shadow-md flex gap-8">
-        {navItems.map((item) => (
-          <Link href={`#${item.toLowerCase()}`} key={item}>
-            <span className="relative text-white cursor-pointer transition duration-300 ease-in-out hover:text-[#a5b4fc]">
-              <span className="z-10 relative">{item}</span>
-              <span className="absolute inset-0 border border-transparent rounded-md hover:border-[#a5b4fc] transition-all duration-300"></span>
-            </span>
-          </Link>
-        ))}
+    <nav
+      className={`fixed top-6 left-1/2 transform -translate-x-1/2 transition-all duration-300 z-50 ${
+        show ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
+      }`}
+    >
+      <div className="px-10 py-3 rounded-full backdrop-blur-md bg-white/30 border border-white/30 shadow-xl">
+        <ul className="flex gap-10 text-black font-semibold">
+          {["Home", "About", "Projects", "Contact"].map((item, index) => (
+            <li
+              key={index}
+              className="cursor-pointer transition-colors duration-200 hover:text-blue-500"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
