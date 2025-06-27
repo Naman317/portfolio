@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import QuoteOfTheDay from "./ui/QuoteOfTheDay ";
 
 const gridItemAnim = {
   hidden: { opacity: 0, y: 30 },
@@ -144,18 +145,13 @@ const Grid = () => {
 
       {/* Word of Day */}
       <motion.div
-        className="col-span-1 bg-white/30 border border-white/10 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:scale-[1.01] transition text-gray-800"
+        className="col-span-1 bg-amber-800/20 border border-white/10 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:scale-[1.01] transition text-gray-800"
         variants={gridItemAnim}
         initial="hidden"
         whileInView="visible"
         custom={6}
       >
-        <h2 className="text-lg font-semibold">Word of the Day</h2>
-        <p className="italic">winsome</p>
-        <p className="text-sm font-light mt-1">
-          <strong>Definition:</strong> Charming, engaging, winning; inspiring approval and trust,
-          especially if in an innocent manner.
-        </p>
+       <QuoteOfTheDay></QuoteOfTheDay>
       </motion.div>
 
       {/* Clock */}
@@ -181,7 +177,10 @@ const Grid = () => {
         whileInView="visible"
         custom={8}
       >
-        LinkedIn
+        <span className="px-2 py-1 text-70xlfont-semibold rounded-md text-white bg-gradient-to-r from-indigo-500 to-purple-500 shadow">
+  LinkedIn
+</span>
+
       </motion.a>
 
       {/* Puzzle */}
