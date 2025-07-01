@@ -36,7 +36,6 @@ export default function RootLayout({ children }) {
         <Certification/>
         <Contact/>
         {children}
-        <ScrollToTop></ScrollToTop>
       </body>
     </html>
   );
