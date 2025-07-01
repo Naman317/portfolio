@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Approach from './components/Approach';
 import Certification from './components/Certification';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ui/ScrollToTop';
 
 export const metadata = {
   title: 'My Portfolio',
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
         <Certification/>
         <Contact/>
         {children}
+        <ScrollToTop></ScrollToTop>
       </body>
     </html>
   );
