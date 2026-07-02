@@ -35,7 +35,7 @@ const QuoteOfTheDay = () => {
       custom={6}
     >
       <h2 className="text-lg font-semibold mb-2">Quote of the Day</h2>
-      <p className="italic text-md">"{quote.quote}"</p>
+      <p className="italic text-md">&quot;{quote.quote}&quot;</p>
       <p className="text-sm font-light mt-2 text-right">— {quote.author}</p>
     </motion.div>
   );

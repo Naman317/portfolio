@@ -3,7 +3,7 @@
 import { cn } from "../../../../lib/utils";
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import React, { useMemo, useRef } from "react";
+import React, { useCallback, useMemo, useRef } from "react";
 import * as THREE from "three";
 
 export const CanvasRevealEffect = ({
@@ -211,7 +211,7 @@ const ShaderMaterial = ({
     timeLocation.value = timestamp;
   });
 
-  const getUniforms = () => {
+  const getUniforms = useCallback(() => {
     const preparedUniforms: any = {};
 
     for (const uniformName in uniforms) {
@@ -255,7 +255,7 @@ const ShaderMaterial = ({
       value: new THREE.Vector2(size.width * 2, size.height * 2),
     }; // Initialize u_resolution
     return preparedUniforms;
-  };
+  }, [size.width, size.height, uniforms]);
 
   // Shader material
   const material = useMemo(() => {
@@ -282,7 +282,7 @@ const ShaderMaterial = ({
     });
 
     return materialObject;
-  }, [size.width, size.height, source]);
+  }, [getUniforms, source]);
 
   return (
     <mesh ref={ref as any}>

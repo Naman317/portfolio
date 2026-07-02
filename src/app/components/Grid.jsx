@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import QuoteOfTheDay from "./ui/QuoteOfTheDay ";
+import QuoteOfTheDay from "./ui/QuoteOfTheDay";
 
 const gridItemAnim = {
   hidden: { opacity: 0, y: 30 },
