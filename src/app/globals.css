@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@font-face {
+  font-family: 'PreComputer';
+  src: url('/fonts/PreComputer.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-precomputer {
+  font-family: 'PreComputer', monospace;
+}
+
+.text-lcd {
+  color: #393e39;
+  text-shadow: 0 0 5px #444844;
+}@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+}
