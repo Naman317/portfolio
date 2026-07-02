@@ -60,7 +60,7 @@ const Grid = () => {
           content: (
             <>
               <h2 className="text-3xl font-bold leading-snug transition group-hover:text-purple-500">
-                I'm very flexible with time zone communications
+                I&apos;m very flexible with time zone communications
               </h2>
               <div className="mt-4 h-1 w-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full" />
             </>
@@ -140,9 +140,12 @@ const Grid = () => {
   whileInView="visible"
   custom={5}
 >
-  <img
+  <Image
     src="https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif"
     alt="Coding GIF"
+    unoptimized
+    width={400}
+    height={300}
     className="w-auto h-auto max-w-full max-h-full object-contain"
   />
 </motion.div>
@@ -172,7 +175,7 @@ const Grid = () => {
 
       {/* LinkedIn */}
      <motion.a
-  href="https://linkedin.com/in/your-profile"
+  href="https://linkedin.com/in/namansharma"
   target="_blank"
   rel="noopener noreferrer"
   className="col-span-1 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-2xl flex items-center justify-center shadow-xl font-extrabold text-3xl hover:scale-[1.03] transition"
@@ -211,7 +214,7 @@ const Grid = () => {
   custom={11}
 >
   <a
-    href="mailto:your@email.com"
+    href="mailto:namansharma3194@gmail.com"
     className="flex-1 flex items-center justify-center bg-white/30 border border-white/10 backdrop-blur-xl text-gray-800 rounded-2xl p-5 shadow-md font-semibold text-lg hover:scale-[1.03] hover:bg-white/40 transition"
   >
     Email

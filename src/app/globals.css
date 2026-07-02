@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 @font-face {
   font-family: 'PreComputer';
   src: url('/fonts/PreComputer.woff2') format('woff2');
@@ -14,7 +14,9 @@
 .text-lcd {
   color: #393e39;
   text-shadow: 0 0 5px #444844;
-}@keyframes blink {
+}
+
+@keyframes blink {
 
   0%,
   50%,

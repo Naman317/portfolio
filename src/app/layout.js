@@ -1,4 +1,5 @@
 // app/layout.tsx
+import { Roboto_Slab } from 'next/font/google';
 import './globals.css';
 import AboutSection from '../app/components/AboutSection';
 import IntroSection from './components/IntroSection';
@@ -11,15 +12,20 @@ import Certification from './components/Certification';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ui/ScrollToTop';
 
+const robotoSlab = Roboto_Slab({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+
 export const metadata = {
   title: 'My Portfolio',
-  description: 'Next.js Tailwind Project',
+  description: 'Next.js  Portfolio',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#ffffff] text-black">
+      <body className={`bg-[#ffffff] text-black ${robotoSlab.className}`}>
         <Navbar/>
         <div id="home">
           <IntroSection />

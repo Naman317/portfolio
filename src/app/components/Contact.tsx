@@ -25,8 +25,8 @@ const Contact = () => {
         <ContactCard
           icon={<FaPhone className="text-purple-400 text-3xl mb-2" />}
           title="Phone"
-          text="+91 12345 67890"
-          link="tel:+911234567890"
+          text="+91 8780942460"
+          link="tel:+918780942460"
         />
         <ContactCard
           icon={<FaLinkedin className="text-purple-400 text-3xl mb-2" />}

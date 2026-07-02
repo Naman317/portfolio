@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const IntroSection = () => {
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-[#eae8e6]">
@@ -18,39 +20,54 @@ const IntroSection = () => {
         {/* Tech Stack Icons */}
         <div className="flex gap-6 mt-10 flex-wrap">
           {/* TypeScript */}
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
             alt="TypeScript"
+            unoptimized
+            width={40}
+            height={40}
             className="h-10 w-10"
           />
 
           {/* Next.js */}
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
             alt="Next.js"
+            unoptimized
+            width={40}
+            height={40}
             className="h-10 w-10 invert"
           />
 
           {/* React */}
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
             alt="React"
+            unoptimized
+            width={40}
+            height={40}
             className="h-10 w-10"
           />
 
           {/* Node.js */}
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
             alt="Node.js"
+            unoptimized
+            width={40}
+            height={40}
             className="h-10 w-10"
           />
 
       
 
           {/* MongoDB */}
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
             alt="MongoDB"
+            unoptimized
+            width={40}
+            height={40}
             className="h-10 w-10"
           />
 
@@ -72,9 +89,11 @@ const IntroSection = () => {
       />
 
       {/* Boat Image */}
-      <img
-        src="https://www.tim-stanton.dev/_next/image?url=%2Fboat.png&w=640&q=75"
+      <Image
+        src="/img/boat.webp"
         alt="boat"
+        width={250}
+        height={250}
         className="absolute bottom-24 right-48 z-30 drop-shadow-lg"
         style={{ width: '250px', height: '250px' }}
       />

@@ -8,12 +8,13 @@ const AboutSection = () => {
 
         {/* LCD SCREEN (UNCHANGED POSITION) */}
         <div className="relative">
-          <img
+          <Image
             alt="lcd screen"
             loading="lazy"
             width={300}
             height={300}
             decoding="async"
+            unoptimized
             className="w-190 h-45 mb-4"
             src="https://www.tim-stanton.dev/_next/image?url=%2Fprecomputer-screen.png&w=1920&q=75"
           />
