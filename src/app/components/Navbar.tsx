@@ -47,7 +47,7 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <li
               key={index}
-              className="cursor-pointer transition-colors duration-200 hover:text-blue-500 active:text-blue-700"
+              className="cursor-pointer transition-all duration-200 hover:opacity-70 active:scale-95 active:opacity-50"
               onClick={() => scrollToSection(item.id)}
             >
               {item.name}

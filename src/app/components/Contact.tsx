@@ -19,25 +19,21 @@ const Contact = () => {
         <ContactCard
           icon={<FaEnvelope className="text-purple-400 text-3xl mb-2" />}
           title="Email"
-          text="namansharma@example.com"
-          link="mailto:namansharma@example.com"
+          link="mailto:namansharma3194@gmail.com"
         />
         <ContactCard
           icon={<FaPhone className="text-purple-400 text-3xl mb-2" />}
           title="Phone"
-          text="+91 8780942460"
           link="tel:+918780942460"
         />
         <ContactCard
           icon={<FaLinkedin className="text-purple-400 text-3xl mb-2" />}
           title="LinkedIn"
-          text="linkedin.com/in/namansharma"
-          link="https://linkedin.com/in/namansharma"
+          link="https://www.linkedin.com/in/naman370/"
         />
         <ContactCard
           icon={<FaGithub className="text-purple-400 text-3xl mb-2" />}
           title="GitHub"
-          text="github.com/Naman317"
           link="https://github.com/Naman317"
         />
       </div>
