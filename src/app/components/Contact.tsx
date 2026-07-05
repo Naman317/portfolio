@@ -144,12 +144,10 @@ const Contact = () => {
 const ContactCard = ({
   icon,
   title,
-  text,
   link,
 }: {
   icon: React.ReactNode;
   title: string;
-  text: string;
   link: string;
 }) => (
   <a
@@ -160,7 +158,6 @@ const ContactCard = ({
   >
     {icon}
     <h3 className="font-semibold text-lg">{title}</h3>
-    <p className="text-gray-400 text-sm mt-1">{text}</p>
   </a>
 );
 
