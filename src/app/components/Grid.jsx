@@ -52,7 +52,7 @@ const Grid = () => {
           content: (
             <>
               <h2 className="text-3xl font-bold leading-snug transition group-hover:text-blue-500">
-                I prioritize client collaboration, fostering open communication
+                I prioritize clean architecture, maintainability, and active collaboration
               </h2>
               <div className="mt-4 h-1 w-16 bg-gradient-to-r from-blue-400 to-teal-300 rounded-full" />
             </>
@@ -62,7 +62,7 @@ const Grid = () => {
           content: (
             <>
               <h2 className="text-3xl font-bold leading-snug transition group-hover:text-purple-500">
-                I&apos;m very flexible with time zone communications
+                Remote-ready & experienced in asynchronous engineering workflows
               </h2>
               <div className="mt-4 h-1 w-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full" />
             </>
@@ -229,12 +229,24 @@ const Grid = () => {
         whileInView="visible"
         custom={10}
       >
-        <h2 className="text-xl font-bold mb-2">Why Should You Hire Me?</h2>
-        <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
-          <li>Strong foundation in full-stack development</li>
-          <li>Effective communication & collaborative approach</li>
-          <li>Consistent learner & fast adapter to new tech</li>
-          <li>Focus on performance, accessibility, and UX</li>
+        <h2 className="text-xl font-bold mb-3">Why Should You Hire Me?</h2>
+        <ul className="space-y-2 text-sm text-gray-700">
+          <li className="flex items-start gap-2">
+            <span className="text-emerald-500 font-bold">✓</span>
+            <span>Solid CS foundation, scalable system design & OOP principles</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-emerald-500 font-bold">✓</span>
+            <span>Hands-on experience in full-stack MERN, Next.js, Django & FastAPI</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-emerald-500 font-bold">✓</span>
+            <span>Real-time systems expertise (WebSockets, Redis, streaming)</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-emerald-500 font-bold">✓</span>
+            <span>Obsessed with clean code, developer UX, and fast execution</span>
+          </li>
         </ul>
       </motion.div>
 
@@ -286,12 +298,29 @@ const Grid = () => {
           <p className="text-slate-400 text-xs font-medium tracking-wide">Full Stack Developer</p>
         </div>
 
-        {/* Flip hint */}
-        <div className="absolute bottom-2.5 flex items-center gap-1 opacity-40">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-white animate-spin" style={{animationDuration:'3s'}} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-          </svg>
-          <span className="text-white text-[9px] font-medium tracking-widest uppercase">Hover to flip</span>
+        {/* Yellow & Black Hazard Caution Strip */}
+        <div
+          className="absolute bottom-0 inset-x-0 h-6 flex items-center justify-center overflow-hidden rounded-b-2xl border-t border-black/60 select-none shadow-md"
+          style={{
+            backgroundImage: 'repeating-linear-gradient(-45deg, #facc15 0, #facc15 10px, #111827 10px, #111827 20px)',
+          }}
+        >
+          <div className="bg-[#111827]/90 px-3 py-0.5 rounded flex items-center gap-1.5 border border-yellow-400/40 shadow-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-2.5 h-2.5 text-yellow-400 animate-spin"
+              style={{ animationDuration: '3s' }}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            <span className="text-yellow-400 text-[9px] font-black tracking-widest uppercase font-mono">
+              HOVER TO FLIP
+            </span>
+          </div>
         </div>
       </div>
 

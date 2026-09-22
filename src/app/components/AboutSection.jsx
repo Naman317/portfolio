@@ -9,14 +9,13 @@ const AboutSection = () => {
         {/* LCD SCREEN (UNCHANGED POSITION) */}
         <div className="relative">
           <Image
-            alt="lcd screen"
+            alt="Hello World on a retro LCD screen"
             loading="lazy"
-            width={300}
+            width={1920}
             height={300}
             decoding="async"
-            unoptimized
             className="w-190 h-45 mb-4"
-            src="https://www.tim-stanton.dev/_next/image?url=%2Fprecomputer-screen.png&w=1920&q=75"
+            src="/img/precomputer-screen.webp"
           />
 
           <p className="font-robotoSlab font-bold text-5xl absolute top-[20%] left-[7%] text-lcd">
@@ -63,7 +62,7 @@ const AboutSection = () => {
               <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <Image
                   src={me}
-                  alt="portrait"
+                  alt="Naman Sharma"
                   className="w-72 md:w-80 h-auto object-cover transform group-hover:scale-105 transition duration-500 ease-out"
                 />
               </div>

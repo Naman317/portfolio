@@ -22,7 +22,7 @@ const projects = [
       "Dark mode support",
       "Clipboard integration"
     ],
-    github: "https://github.com/your-repo",
+    github: "https://github.com/Naman317",
     live: "https://webtoolsmith.vercel.app"
   },
   {
@@ -81,29 +81,35 @@ const projects = [
   {
     id: 4,
     title: "TaskMate",
-    type: "Full Stack Productivity Application",
-    description: "Task management platform with authentication and voice commands",
+    type: "Full Stack Productivity & Workflow Platform",
+    description: "MERN-based task management platform with 3-tier RBAC, optimistic Kanban, and Web Speech API voice control",
     overview: [
-      "Built a full-stack task management system using MERN stack architecture.",
-      "Implemented secure authentication using JWT and role-based access control.",
-      "Integrated voice-based task creation using Web Speech API for accessibility."
+      "Architected a high-performance MERN task management platform featuring optimistic UI updates and real-time analytics.",
+      "Implemented strict 3-tier Role-Based Access Control (Super Admin, Admin, Member) with secure JWT and HttpOnly cookies.",
+      "Engineered native Web Speech API voice control enabling hands-free task creation, voice search, and stage transitions.",
+      "Built zero-latency Kanban drag-and-drop workflow progression with automated overdue task detection."
     ],
     technologies: [
-      "React.js",
+      "React",
+      "Node.js",
       "Express.js",
       "MongoDB",
+      "Tailwind CSS",
+      "Framer Motion",
       "JWT",
-      "Tailwind CSS"
+      "Web Speech API",
+      "REST API"
     ],
     features: [
-      "Task creation, update, and deletion",
-      "Voice-powered task input",
-      "Role-based access control",
-      "Secure authentication system",
-      "Responsive UI design"
+      "3-Tier Role-Based Access Control (RBAC)",
+      "Optimistic UI & Kanban Drag-and-Drop",
+      "Voice-driven task creation & stage transitions",
+      "Automated overdue task tracking & alerts",
+      "Secure JWT authentication & HttpOnly cookies",
+      "Activity analytics & real-time notification panel"
     ],
-    github: "",
-    live: ""
+    github: "https://github.com/Naman317/TaskMate",
+    live: "https://taskmatie.netlify.app"
   },
   {
     id: 5,

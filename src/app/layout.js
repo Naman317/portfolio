@@ -4,7 +4,6 @@ import './globals.css';
 import AboutSection from '../app/components/AboutSection';
 import IntroSection from './components/IntroSection';
 import Navbar from './components/Navbar';
-import Main from './components/Main';
 import Grid from './components/Grid';
 import Projects from './components/Projects';
 import Approach from './components/Approach';
@@ -18,8 +17,8 @@ const robotoSlab = Roboto_Slab({
 });
 
 export const metadata = {
-  title: 'My Portfolio',
-  description: 'Next.js  Portfolio',
+  title: 'Naman Sharma — Full Stack Engineer',
+  description: 'Portfolio of Naman Sharma, a full-stack software engineer specialising in React, Next.js, Node.js, and AI-integrated applications.',
 };
 
 export default function RootLayout({ children }) {

@@ -16,9 +16,9 @@ const Approach = () => {
       </h1>
       <div className="my-16 flex flex-col lg:flex-row items-center justify-center w-full gap-6">
         <Card
-          title="Planning & Strategy"
+          title="Architecture & System Design"
           icon={<PhaseButton order="Phase 1" />}
-          des="We collaborate to map out your website’s goals, target users, and desired structure. I prioritize clarity, content flow, and communication from the start."
+          des="Scoping core requirements, designing robust database schemas, defining clean API contracts, and selecting the optimal tech stack for scalability and maintainability."
         >
           <CanvasRevealEffect
             animationSpeed={5.5}
@@ -28,9 +28,9 @@ const Approach = () => {
         </Card>
 
         <Card
-          title="Development & Progress Update"
+          title="Core Logic & Implementation"
           icon={<PhaseButton order="Phase 2" />}
-          des="As development begins, you’ll receive consistent updates with visuals, interactions, and functionality for feedback and alignment throughout."
+          des="Building high-performance backend services, interactive client interfaces, and real-time event pipelines with modular, clean, and maintainable code."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -41,9 +41,9 @@ const Approach = () => {
         </Card>
 
         <Card
-          title="Finalization & Launch"
+          title="Testing, Optimization & Shipping"
           icon={<PhaseButton order="Phase 3" />}
-          des="After review and refinements, your site is prepped for production, tested across devices, and launched with optimized performance."
+          des="Comprehensive integration testing, database query profiling, edge-case handling, and automating CI/CD deployments for seamless production delivery."
         >
           <CanvasRevealEffect
             animationSpeed={2.5}
