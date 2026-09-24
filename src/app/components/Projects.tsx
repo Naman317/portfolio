@@ -7,32 +7,6 @@ import { FaArrowRight, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const projects = [
   {
     "id": 1,
-    "title": "WebToolSmith",
-    "type": "AI-Powered UI Generator",
-    "description": "AI tool that generates UI components from text prompts",
-    "overview": [
-      "Built an AI-powered UI generator using OpenAI API to convert prompts into reusable components.",
-      "Developed a responsive frontend using React and TailwindCSS for fast prototyping.",
-      "Deployed on Vercel with optimized performance and instant load times."
-    ],
-    "technologies": [
-      "React",
-      "Next.js",
-      "OpenAI API",
-      "TailwindCSS",
-      "Node.js"
-    ],
-    "features": [
-      "Prompt-based UI generation",
-      "Live component preview and export",
-      "Dark mode support",
-      "Clipboard integration"
-    ],
-    "github": "https://github.com/Naman317",
-    "live": "https://webtoolsmith.vercel.app"
-  },
-  {
-    "id": 2,
     "title": "Virtual-WB",
     "type": "Real-Time Collaboration Platform",
     "description": "High-performance, real-time collaborative digital whiteboard with multiplayer cursors and advanced RBAC",
@@ -55,22 +29,22 @@ const projects = [
       "Vercel"
     ],
     "features": [
-      "Real-Time WebSocket Synchronization",
-      "Peer-to-Peer State Recovery",
-      "High-Performance 60 FPS Canvas Engine",
-      "Multiplayer Live Cursors",
-      "Live Chat & Notifications Engine"
+      "Real-Time WebSocket Synchronization powered by Django Channels for near-zero latency broadcasts.",
+      "Peer-to-Peer State Recovery architecture to sync master drawing state directly between browsers.",
+      "High-Performance Canvas Engine bypassing standard React state updates for a buttery-smooth 60 FPS.",
+      "Strict Role-Based Access Control (RBAC) separating Teacher and Student capabilities.",
+      "Multiplayer Live Cursors tracking user mouse movements with custom real-time name tags."
     ],
-    "github": "",
-    "live": ""
+    "github": "https://github.com/Naman317/Virtual-WB",
+    "live": "https://virtual-wb.vercel.app/"
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "PeerLink",
     "type": "Peer-to-Peer File Sharing System",
     "description": "High-performance ephemeral P2P file-sharing application with direct TCP socket streaming and zero-copy I/O",
     "overview": [
-      "Engineered an ephemeral P2P file sharing engine in Java, managing dynamic TCP port allocations (49152–65535) for direct peer transfer.",
+      "Engineered an ephemeral P2P file sharing engine in Java, managing dynamic TCP port allocations (49152-65535) for direct peer transfer.",
       "Eliminated memory exhaustion (OOM) risks by building a streaming I/O pipeline using HTTP chunked transfer encoding.",
       "Architected a multi-threaded connection daemon with ExecutorService and ConcurrentHashMap, resolving connection bottlenecks.",
       "Automated resource reclamation via a ScheduledExecutorService (30-min TTL) to safely release bound ports and purge disk files."
@@ -86,17 +60,17 @@ const projects = [
       "Render"
     ],
     "features": [
-      "Zero-Memory-Spike Streaming (No OOM)",
-      "Dynamic Port Invite Codes",
-      "Automated TTL Resource Cleanup",
-      "Thread-Safe State (ConcurrentHashMap)",
-      "Real-Time Progress Tracking"
+      "Zero-Memory-Spike Streaming by piping direct TCP sockets to HTTP responses to prevent OOM errors.",
+      "Dynamic Port Invite Codes generating ephemeral 5-digit codes for direct peer-to-peer connection.",
+      "Automated TTL Resource Cleanup via ScheduledExecutorService to safely unbind ports and purge files.",
+      "Thread-Safe connection state management utilizing ConcurrentHashMap for concurrent transfers.",
+      "Real-Time File Transfer Progress tracking with dynamic animated percentage indicators."
     ],
-    "github": "",
+    "github": "https://github.com/Naman317/p2p_File-Sharing",
     "live": "https://peerlink-share.onrender.com"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Tasky (TaskMate)",
     "type": "Enterprise-grade Task Management & Productivity SaaS",
     "description": "Modern SaaS platform featuring zero-latency optimistic Kanban drag-and-drop and browser-native voice command control",
@@ -122,17 +96,17 @@ const projects = [
       "Render"
     ],
     "features": [
-      "Optimistic UI & Kanban Drag-and-Drop",
-      "Resilient Dual-Layer Authentication",
-      "3-Tier Role-Based Access Control (RBAC)",
-      "Voice-Controlled Productivity",
-      "Tokenized Team Invitation System"
+      "Zero-Latency Kanban Board with optimistic UI data updates using Redux Toolkit Query.",
+      "Dual-Layer Token Transport with HttpOnly cookies and fallback headers to bypass cross-domain blocking.",
+      "Strict 3-Tier Role-Based Access Control (RBAC) with backend security middlewares.",
+      "Browser-native Web Speech API for hands-free voice-controlled task automation and status transitions.",
+      "Tokenized Team Invitation System generating 48-hour secure cryptographic invite links."
     ],
     "github": "https://github.com/Naman317/TaskMate",
     "live": "https://tasky-one-iota.vercel.app"
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "AI Interviewer",
     "type": "AI-Powered Assessment Platform",
     "description": "Multimodal AI system for evaluating interviews using audio, video, and code analysis",
@@ -169,9 +143,43 @@ const projects = [
     "live": ""
   }
 ];
+
 const highlightWords = [
-  "React", "MongoDB", "Tailwind", "TailwindCSS", "OpenAI", "full-stack",
-  "backend", "frontend", "Vercel", "Next.js", "Node.js"
+  "React",
+  "MongoDB",
+  "Tailwind",
+  "TailwindCSS",
+  "OpenAI",
+  "full-stack",
+  "backend",
+  "frontend",
+  "Vercel",
+  "Next.js",
+  "Node.js",
+  "Java",
+  "Django",
+  "PostgreSQL",
+  "Render",
+  "WebSockets",
+  "MERN",
+  "SaaS",
+  "TCP",
+  "Sockets",
+  "Zustand",
+  "Docker",
+  "Redux",
+  "Toolkit",
+  "JWT",
+  "HttpOnly",
+  "OOM",
+  "WebSocket",
+  "Channels",
+  "API",
+  "TypeScript",
+  "Express.js",
+  "Vite",
+  "FastAPI",
+  "Python"
 ];
 
 const Projects = () => {
