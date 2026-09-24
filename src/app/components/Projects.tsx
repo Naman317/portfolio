@@ -6,123 +6,143 @@ import { FaArrowRight, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
-    id: 1,
-    title: "WebToolSmith",
-    type: "AI-Powered UI Generator",
-    description: "AI tool that generates UI components from text prompts",
-    overview: [
+    "id": 1,
+    "title": "WebToolSmith",
+    "type": "AI-Powered UI Generator",
+    "description": "AI tool that generates UI components from text prompts",
+    "overview": [
       "Built an AI-powered UI generator using OpenAI API to convert prompts into reusable components.",
       "Developed a responsive frontend using React and TailwindCSS for fast prototyping.",
       "Deployed on Vercel with optimized performance and instant load times."
     ],
-    technologies: ["React", "Next.js", "OpenAI API", "TailwindCSS", "Node.js"],
-    features: [
+    "technologies": [
+      "React",
+      "Next.js",
+      "OpenAI API",
+      "TailwindCSS",
+      "Node.js"
+    ],
+    "features": [
       "Prompt-based UI generation",
       "Live component preview and export",
       "Dark mode support",
       "Clipboard integration"
     ],
-    github: "https://github.com/Naman317",
-    live: "https://webtoolsmith.vercel.app"
+    "github": "https://github.com/Naman317",
+    "live": "https://webtoolsmith.vercel.app"
   },
   {
-    id: 2,
-    title: "Real-Time Collaborative Whiteboard System",
-    type: "Real-Time Collaboration Platform",
-    description: "Multi-user interactive whiteboard for live collaboration",
-    overview: [
-      "Developed a real-time collaborative whiteboard enabling simultaneous drawing and interaction.",
-      "Implemented WebSocket-based synchronization using Django Channels and ASGI architecture.",
-      "Designed role-based access control for structured teacher-student interaction."
+    "id": 2,
+    "title": "Virtual-WB",
+    "type": "Real-Time Collaboration Platform",
+    "description": "High-performance, real-time collaborative digital whiteboard with multiplayer cursors and advanced RBAC",
+    "overview": [
+      "Maintained persistent, bi-directional WebSocket connections powered by Django Channels for near-zero latency broadcasts.",
+      "Engineered a decentralized peer-to-peer sync architecture for state recovery, eliminating server memory bottlenecks.",
+      "Designed a strict Role-Based Access Control (RBAC) system for Teachers and Students with live WebSocket notifications.",
+      "Optimized the 60 FPS drawing engine by bypassing standard React state updates during active drawing phases."
     ],
-    technologies: [
+    "technologies": [
+      "React (Vite)",
+      "Zustand",
+      "Tailwind CSS",
+      "Framer Motion",
       "Django",
-      "Django Channels",
+      "Django Channels (WebSockets)",
       "ASGI",
-      "WebSockets",
-      "Redis",
-      "Daphne",
-      "JavaScript",
-      "HTML5 Canvas",
-      "CSS",
-      "PostgreSQL"
+      "PostgreSQL (Supabase)",
+      "Render",
+      "Vercel"
     ],
-    features: [
-      "Real-time drawing synchronization",
-      "Live chat integration",
-      "Role-based permissions (Teacher/Student)",
-      "Undo/Redo canvas actions",
-      "Session-based collaboration"
+    "features": [
+      "Real-Time WebSocket Synchronization",
+      "Peer-to-Peer State Recovery",
+      "High-Performance 60 FPS Canvas Engine",
+      "Multiplayer Live Cursors",
+      "Live Chat & Notifications Engine"
     ],
-    github: "",
-    live: ""
+    "github": "",
+    "live": ""
   },
   {
-    id: 3,
-    title: "PeerLink",
-    type: "Peer-to-Peer File Sharing System",
-    description: "Decentralized file sharing system with parallel transfer support",
-    overview: [
-      "Designed a decentralized peer-to-peer file sharing system using Java-based dynamic HTTP servers.",
-      "Implemented multipart upload/download for efficient and fast file transfers.",
-      "Containerized services using Docker for isolated and scalable deployment."
+    "id": 3,
+    "title": "PeerLink",
+    "type": "Peer-to-Peer File Sharing System",
+    "description": "High-performance ephemeral P2P file-sharing application with direct TCP socket streaming and zero-copy I/O",
+    "overview": [
+      "Engineered an ephemeral P2P file sharing engine in Java, managing dynamic TCP port allocations (49152–65535) for direct peer transfer.",
+      "Eliminated memory exhaustion (OOM) risks by building a streaming I/O pipeline using HTTP chunked transfer encoding.",
+      "Architected a multi-threaded connection daemon with ExecutorService and ConcurrentHashMap, resolving connection bottlenecks.",
+      "Automated resource reclamation via a ScheduledExecutorService (30-min TTL) to safely release bound ports and purge disk files."
     ],
-    technologies: ["Java", "Docker", "Next.js"],
-    features: [
-      "Decentralized file exchange",
-      "Parallel file transfer system",
-      "Chunk-based upload/download",
-      "Dockerized microservice architecture",
-      "Concurrent request handling"
+    "technologies": [
+      "Java 17",
+      "TCP Sockets",
+      "Multi-Threading",
+      "Next.js 14",
+      "TypeScript",
+      "Tailwind CSS",
+      "Docker",
+      "Render"
     ],
-    github: "",
-    live: ""
+    "features": [
+      "Zero-Memory-Spike Streaming (No OOM)",
+      "Dynamic Port Invite Codes",
+      "Automated TTL Resource Cleanup",
+      "Thread-Safe State (ConcurrentHashMap)",
+      "Real-Time Progress Tracking"
+    ],
+    "github": "",
+    "live": "https://peerlink-share.onrender.com"
   },
   {
-    id: 4,
-    title: "TaskMate",
-    type: "Full Stack Productivity & Workflow Platform",
-    description: "MERN-based task management platform with 3-tier RBAC, optimistic Kanban, and Web Speech API voice control",
-    overview: [
-      "Architected a high-performance MERN task management platform featuring optimistic UI updates and real-time analytics.",
-      "Implemented strict 3-tier Role-Based Access Control (Super Admin, Admin, Member) with secure JWT and HttpOnly cookies.",
-      "Engineered native Web Speech API voice control enabling hands-free task creation, voice search, and stage transitions.",
-      "Built zero-latency Kanban drag-and-drop workflow progression with automated overdue task detection."
+    "id": 4,
+    "title": "Tasky (TaskMate)",
+    "type": "Enterprise-grade Task Management & Productivity SaaS",
+    "description": "Modern SaaS platform featuring zero-latency optimistic Kanban drag-and-drop and browser-native voice command control",
+    "overview": [
+      "Architected and deployed a full-stack MERN task management SaaS platform featuring real-time Kanban boards and voice-command navigation.",
+      "Engineered a resilient cross-origin authentication system utilizing JWT, secure HttpOnly cookies, and custom header fallbacks.",
+      "Optimized frontend performance using Redux Toolkit (RTK) Query, implementing optimistic UI updates for zero-latency drag-and-drop.",
+      "Designed a 3-tier Role-Based Access Control (RBAC) system to enforce secure data isolation and administrative privileges.",
+      "Integrated browser-native Web Speech API for voice-driven task automation and a tokenized team invitation system."
     ],
-    technologies: [
-      "React",
+    "technologies": [
+      "React 18",
+      "Redux Toolkit",
+      "RTK Query",
+      "Tailwind CSS",
+      "Framer Motion",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "Tailwind CSS",
-      "Framer Motion",
       "JWT",
       "Web Speech API",
-      "REST API"
+      "Vercel",
+      "Render"
     ],
-    features: [
-      "3-Tier Role-Based Access Control (RBAC)",
+    "features": [
       "Optimistic UI & Kanban Drag-and-Drop",
-      "Voice-driven task creation & stage transitions",
-      "Automated overdue task tracking & alerts",
-      "Secure JWT authentication & HttpOnly cookies",
-      "Activity analytics & real-time notification panel"
+      "Resilient Dual-Layer Authentication",
+      "3-Tier Role-Based Access Control (RBAC)",
+      "Voice-Controlled Productivity",
+      "Tokenized Team Invitation System"
     ],
-    github: "https://github.com/Naman317/TaskMate",
-    live: "https://taskmatie.netlify.app"
+    "github": "https://github.com/Naman317/TaskMate",
+    "live": "https://tasky-one-iota.vercel.app"
   },
   {
-    id: 5,
-    title: "AI Interviewer",
-    type: "AI-Powered Assessment Platform",
-    description: "Multimodal AI system for evaluating interviews using audio, video, and code analysis",
-    overview: [
+    "id": 5,
+    "title": "AI Interviewer",
+    "type": "AI-Powered Assessment Platform",
+    "description": "Multimodal AI system for evaluating interviews using audio, video, and code analysis",
+    "overview": [
       "Built a distributed AI interview platform combining React, Node.js, and FastAPI.",
       "Integrated multimodal evaluation using audio, video, and coding analysis.",
       "Implemented hybrid LLM routing between local (Ollama) and cloud (Gemini) models.",
       "Enabled real-time transcription, emotion detection, and performance scoring."
     ],
-    technologies: [
+    "technologies": [
       "React",
       "Vite",
       "Node.js",
@@ -137,7 +157,7 @@ const projects = [
       "Gemini",
       "WebSockets"
     ],
-    features: [
+    "features": [
       "Real-time interview simulation",
       "Speech-to-text transcription (Whisper)",
       "Eye tracking and emotion analysis",
@@ -145,8 +165,8 @@ const projects = [
       "Resume-based adaptive questioning",
       "AI-powered performance analytics"
     ],
-    github: "",
-    live: ""
+    "github": "",
+    "live": ""
   }
 ];
 const highlightWords = [
